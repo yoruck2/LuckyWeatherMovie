@@ -20,7 +20,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let secondVC = WeatherViewController()
         let thirdVC = BoxOfficeViewController()
         
-        
         let tabBarController = UITabBarController()
         tabBarController.setViewControllers([firstVC, secondVC, thirdVC], animated: true)
         //        tabBarController.tabBar.tintColor = UIColor(named: "keyColor")

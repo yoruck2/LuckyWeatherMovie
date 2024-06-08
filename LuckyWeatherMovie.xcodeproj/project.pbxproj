@@ -18,6 +18,10 @@
 		8415BB752C139295000CA8F1 /* UILabel+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8415BB742C139295000CA8F1 /* UILabel+.swift */; };
 		8415BB7A2C139555000CA8F1 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 8415BB792C139555000CA8F1 /* Alamofire */; };
 		8415BB7D2C139566000CA8F1 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8415BB7C2C139566000CA8F1 /* SnapKit */; };
+		8415BB7F2C14382B000CA8F1 /* WinningBall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8415BB7E2C14382B000CA8F1 /* WinningBall.swift */; };
+		8415BB812C144590000CA8F1 /* APIURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8415BB802C144590000CA8F1 /* APIURL.swift */; };
+		8415BB832C14697A000CA8F1 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8415BB822C14697A000CA8F1 /* Network.swift */; };
+		8415BB862C147B30000CA8F1 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8415BB852C147B2F000CA8F1 /* PickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,10 @@
 		8415BB702C138EA0000CA8F1 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		8415BB722C138EAE000CA8F1 /* BoxOfficeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxOfficeViewController.swift; sourceTree = "<group>"; };
 		8415BB742C139295000CA8F1 /* UILabel+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+.swift"; sourceTree = "<group>"; };
+		8415BB7E2C14382B000CA8F1 /* WinningBall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinningBall.swift; sourceTree = "<group>"; };
+		8415BB802C144590000CA8F1 /* APIURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIURL.swift; sourceTree = "<group>"; };
+		8415BB822C14697A000CA8F1 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		8415BB852C147B2F000CA8F1 /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,9 +74,10 @@
 		8415BB592C138E29000CA8F1 /* LuckyWeatherMovie */ = {
 			isa = PBXGroup;
 			children = (
+				8415BB802C144590000CA8F1 /* APIURL.swift */,
 				8415BB772C1392BA000CA8F1 /* App */,
 				8415BB762C1392A2000CA8F1 /* extension */,
-				8415BB5E2C138E29000CA8F1 /* LottoViewController.swift */,
+				8415BB842C14697F000CA8F1 /* Lotto */,
 				8415BB702C138EA0000CA8F1 /* WeatherViewController.swift */,
 				8415BB722C138EAE000CA8F1 /* BoxOfficeViewController.swift */,
 				8415BB6E2C138E3D000CA8F1 /* .gitignore */,
@@ -94,6 +103,17 @@
 				8415BB5C2C138E29000CA8F1 /* SceneDelegate.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		8415BB842C14697F000CA8F1 /* Lotto */ = {
+			isa = PBXGroup;
+			children = (
+				8415BB5E2C138E29000CA8F1 /* LottoViewController.swift */,
+				8415BB852C147B2F000CA8F1 /* PickerView.swift */,
+				8415BB7E2C14382B000CA8F1 /* WinningBall.swift */,
+				8415BB822C14697A000CA8F1 /* Network.swift */,
+			);
+			path = Lotto;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,8 +198,12 @@
 				8415BB752C139295000CA8F1 /* UILabel+.swift in Sources */,
 				8415BB5F2C138E29000CA8F1 /* LottoViewController.swift in Sources */,
 				8415BB712C138EA0000CA8F1 /* WeatherViewController.swift in Sources */,
+				8415BB7F2C14382B000CA8F1 /* WinningBall.swift in Sources */,
+				8415BB812C144590000CA8F1 /* APIURL.swift in Sources */,
 				8415BB5B2C138E29000CA8F1 /* AppDelegate.swift in Sources */,
+				8415BB832C14697A000CA8F1 /* Network.swift in Sources */,
 				8415BB732C138EAE000CA8F1 /* BoxOfficeViewController.swift in Sources */,
+				8415BB862C147B30000CA8F1 /* PickerView.swift in Sources */,
 				8415BB5D2C138E29000CA8F1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -329,7 +353,6 @@
 				INFOPLIST_FILE = LuckyWeatherMovie/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -362,7 +385,6 @@
 				INFOPLIST_FILE = LuckyWeatherMovie/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
