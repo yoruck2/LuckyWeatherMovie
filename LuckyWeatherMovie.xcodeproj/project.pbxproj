@@ -22,6 +22,9 @@
 		8415BB812C144590000CA8F1 /* APIURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8415BB802C144590000CA8F1 /* APIURL.swift */; };
 		8415BB832C14697A000CA8F1 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8415BB822C14697A000CA8F1 /* Network.swift */; };
 		8415BB862C147B30000CA8F1 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8415BB852C147B2F000CA8F1 /* PickerView.swift */; };
+		8496E7142C15895A00F87AF8 /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496E7132C15895900F87AF8 /* Constraints.swift */; };
+		8496E7172C158ACB00F87AF8 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496E7162C158ACB00F87AF8 /* TextField.swift */; };
+		8496E7192C158B5400F87AF8 /* LottoDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496E7182C158B5400F87AF8 /* LottoDTO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,9 @@
 		8415BB802C144590000CA8F1 /* APIURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIURL.swift; sourceTree = "<group>"; };
 		8415BB822C14697A000CA8F1 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		8415BB852C147B2F000CA8F1 /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
+		8496E7132C15895900F87AF8 /* Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
+		8496E7162C158ACB00F87AF8 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		8496E7182C158B5400F87AF8 /* LottoDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoDTO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,12 +114,23 @@
 		8415BB842C14697F000CA8F1 /* Lotto */ = {
 			isa = PBXGroup;
 			children = (
-				8415BB5E2C138E29000CA8F1 /* LottoViewController.swift */,
-				8415BB852C147B2F000CA8F1 /* PickerView.swift */,
+				8496E7152C158A7A00F87AF8 /* VC */,
 				8415BB7E2C14382B000CA8F1 /* WinningBall.swift */,
 				8415BB822C14697A000CA8F1 /* Network.swift */,
+				8496E7182C158B5400F87AF8 /* LottoDTO.swift */,
 			);
 			path = Lotto;
+			sourceTree = "<group>";
+		};
+		8496E7152C158A7A00F87AF8 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				8415BB5E2C138E29000CA8F1 /* LottoViewController.swift */,
+				8496E7162C158ACB00F87AF8 /* TextField.swift */,
+				8415BB852C147B2F000CA8F1 /* PickerView.swift */,
+				8496E7132C15895900F87AF8 /* Constraints.swift */,
+			);
+			path = VC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,10 +212,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8496E7192C158B5400F87AF8 /* LottoDTO.swift in Sources */,
 				8415BB752C139295000CA8F1 /* UILabel+.swift in Sources */,
 				8415BB5F2C138E29000CA8F1 /* LottoViewController.swift in Sources */,
 				8415BB712C138EA0000CA8F1 /* WeatherViewController.swift in Sources */,
+				8496E7172C158ACB00F87AF8 /* TextField.swift in Sources */,
 				8415BB7F2C14382B000CA8F1 /* WinningBall.swift in Sources */,
+				8496E7142C15895A00F87AF8 /* Constraints.swift in Sources */,
 				8415BB812C144590000CA8F1 /* APIURL.swift in Sources */,
 				8415BB5B2C138E29000CA8F1 /* AppDelegate.swift in Sources */,
 				8415BB832C14697A000CA8F1 /* Network.swift in Sources */,

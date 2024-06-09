@@ -14,7 +14,7 @@ extension LottoViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return round
+        return searchingRound - 2
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
@@ -26,5 +26,4 @@ extension LottoViewController: UIPickerViewDelegate, UIPickerViewDataSource {
             self?.lottoData = lotto
         }
     }
-    
 }

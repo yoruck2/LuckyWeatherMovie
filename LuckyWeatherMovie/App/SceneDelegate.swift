@@ -19,11 +19,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let firstVC = LottoViewController()
         let secondVC = WeatherViewController()
         let thirdVC = BoxOfficeViewController()
+        [firstVC, secondVC, thirdVC].forEach { $0.view.backgroundColor = .white }
         
         let tabBarController = UITabBarController()
         tabBarController.setViewControllers([firstVC, secondVC, thirdVC], animated: true)
-        //        tabBarController.tabBar.tintColor = UIColor(named: "keyColor")
-        //        tabBarController.tabBar.unselectedItemTintColor = .lightGray
+                tabBarController.tabBar.tintColor = UIColor(named: "keyColor")
+                tabBarController.tabBar.backgroundColor = #colorLiteral(red: 0.9086325765, green: 0.971329987, blue: 0.9803524613, alpha: 1)
         
         if let items = tabBarController.tabBar.items {
             items[0].selectedImage = UIImage(systemName: "45.circle.fill")
