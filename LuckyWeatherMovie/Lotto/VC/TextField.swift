@@ -21,7 +21,6 @@ extension LottoViewController: UITextFieldDelegate {
             self?.lottoData = lotto
         }
         roundPickerView.selectRow(round - 1, inComponent: 0, animated: true)
-        
     }
 }
 

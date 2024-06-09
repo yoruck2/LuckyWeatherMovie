@@ -60,5 +60,9 @@ extension LottoViewController {
             $0.trailing.equalTo(view.safeAreaLayoutGuide).inset(20)
             $0.height.equalTo(250)
         }
+        
+        winningPrizeLabel.snp.makeConstraints {
+            $0.centerX.centerY.equalToSuperview()
+        }
     }
 }

@@ -18,7 +18,8 @@ class LottoViewController: UIViewController {
         didSet {
             guard let lottoData,
                     let drwNo = lottoData.drwNo,
-                  let drwNoDate = lottoData.drwNoDate
+                  let drwNoDate = lottoData.drwNoDate,
+                  let firstWinamnt = lottoData.firstWinamnt
             else {
                 return
                 
@@ -30,11 +31,14 @@ class LottoViewController: UIViewController {
             fifthBall.winningNumber = lottoData.drwtNo5
             sixthBall.winningNumber = lottoData.drwtNo6
             bonusBall.winningNumber = lottoData.bnusNo
-            winningResultRoundLabel.text = "\(drwNo)회 당첨결과"
-            winningResultRoundLabel.setFontColorRange(targetString: "\(drwNo)", font: .boldSystemFont(ofSize: 30), color: UIColor(named: "keyColor"))
+            
             dateLabel.text = "\(drwNoDate) 추첨"
             searchTextField.text = "\(drwNo)"
-            roundPickerView.reloadAllComponents()
+            
+            winningResultRoundLabel.text = "\(drwNo) 회 당첨결과"
+            winningResultRoundLabel.setFontColorRange(targetString: "\(drwNo)", font: .boldSystemFont(ofSize: 30), color: UIColor(named: "keyColor"))
+            winningPrizeLabel.text = "💰\n당첨 금액\n₩ \(firstWinamnt.formatted())"
+            winningPrizeLabel.setFontColorRange(targetString: "\(firstWinamnt.formatted())", font: .boldSystemFont(ofSize: 25), color: UIColor(named: "keyColor"))
         }
     }
     
@@ -126,6 +130,14 @@ class LottoViewController: UIViewController {
         return view
     }()
     
+    lazy var winningPrizeLabel = {
+        let view = UILabel()
+        view.text = "당첨 금액"
+        view.textAlignment = .center
+        view.numberOfLines = 0
+        return view
+    }()
+    
     lazy var roundPickerView = {
         let view = UIPickerView()
         return view
@@ -142,7 +154,6 @@ class LottoViewController: UIViewController {
         configureHierachy()
         configureLayout()
         loadRecentWinningResult()
-        
     }
     
     func loadRecentWinningResult() {
@@ -191,6 +202,7 @@ class LottoViewController: UIViewController {
         view.addSubview(resultBallStackView)
         view.addSubview(bonusLabel)
         view.addSubview(roundPickerView)
+        view.addSubview(winningPrizeLabel)
     }
 }
 
