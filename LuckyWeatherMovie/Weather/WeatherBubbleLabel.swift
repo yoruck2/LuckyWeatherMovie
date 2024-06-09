@@ -13,19 +13,21 @@ import UIKit
     @IBInspectable var leftPadding: CGFloat = 0.0
     @IBInspectable var bottomPadding: CGFloat = 0.0
     @IBInspectable var rightPadding: CGFloat = 0.0
-
-    convenience init(weatherText: String, _ padding: UIEdgeInsets = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)) {
+    
+    convenience init(_ weatherText: String, _ padding: UIEdgeInsets = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)) {
         self.init()
         topPadding = padding.top
         leftPadding = padding.left
         bottomPadding = padding.bottom
         rightPadding = padding.right
+        
         self.text = weatherText
         layer.cornerRadius = 8
         backgroundColor = .white
+        numberOfLines = 0
         clipsToBounds = true
         alpha = 0
-        transform = CGAffineTransform(translationX: 0, y: 20)
+        
     }
     
     override func drawText(in rect: CGRect) {
