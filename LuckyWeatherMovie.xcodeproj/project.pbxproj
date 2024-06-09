@@ -84,8 +84,8 @@
 				8415BB772C1392BA000CA8F1 /* App */,
 				8415BB762C1392A2000CA8F1 /* extension */,
 				8415BB842C14697F000CA8F1 /* Lotto */,
-				8415BB702C138EA0000CA8F1 /* WeatherViewController.swift */,
-				8415BB722C138EAE000CA8F1 /* BoxOfficeViewController.swift */,
+				8496E71A2C15960F00F87AF8 /* Weather */,
+				8496E71B2C15962000F87AF8 /* BoxOffice */,
 				8415BB6E2C138E3D000CA8F1 /* .gitignore */,
 				8415BB632C138E2A000CA8F1 /* Assets.xcassets */,
 				8415BB652C138E2A000CA8F1 /* LaunchScreen.storyboard */,
@@ -131,6 +131,22 @@
 				8496E7132C15895900F87AF8 /* Constraints.swift */,
 			);
 			path = VC;
+			sourceTree = "<group>";
+		};
+		8496E71A2C15960F00F87AF8 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				8415BB702C138EA0000CA8F1 /* WeatherViewController.swift */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		8496E71B2C15962000F87AF8 /* BoxOffice */ = {
+			isa = PBXGroup;
+			children = (
+				8415BB722C138EAE000CA8F1 /* BoxOfficeViewController.swift */,
+			);
+			path = BoxOffice;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
