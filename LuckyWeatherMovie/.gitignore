@@ -8,6 +8,9 @@ APIKey.swift
 
 GoogleService-Info.plist
 
+## config ##
+*.xcconfig
+
 
 ### Swift ###
 # Xcode

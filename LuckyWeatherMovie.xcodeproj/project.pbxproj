@@ -25,6 +25,15 @@
 		8496E7142C15895A00F87AF8 /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496E7132C15895900F87AF8 /* Constraints.swift */; };
 		8496E7172C158ACB00F87AF8 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496E7162C158ACB00F87AF8 /* TextField.swift */; };
 		8496E7192C158B5400F87AF8 /* LottoDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496E7182C158B5400F87AF8 /* LottoDTO.swift */; };
+		8496E71F2C15C0A700F87AF8 /* configuration.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 8496E71E2C15C0A700F87AF8 /* configuration.xcconfig */; };
+		8496E7242C15D33B00F87AF8 /* WeatherDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496E7232C15D33B00F87AF8 /* WeatherDTO.swift */; };
+		8496E7292C15FE9B00F87AF8 /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496E7282C15FE9B00F87AF8 /* UIImage+.swift */; };
+		8496E72B2C1607DE00F87AF8 /* WeatherBubbleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496E72A2C1607DE00F87AF8 /* WeatherBubbleLabel.swift */; };
+		8496E72F2C1616FF00F87AF8 /* Array+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496E72E2C1616FF00F87AF8 /* Array+.swift */; };
+		8496E7332C16471400F87AF8 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496E7322C16471400F87AF8 /* UIView+.swift */; };
+		8496E7362C164C9F00F87AF8 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 8496E7352C164C9F00F87AF8 /* Kingfisher */; };
+		8496E7382C16599E00F87AF8 /* Double+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496E7372C16599E00F87AF8 /* Double+.swift */; };
+		8496E73A2C16657300F87AF8 /* Int+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496E7392C16657300F87AF8 /* Int+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +55,14 @@
 		8496E7132C15895900F87AF8 /* Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
 		8496E7162C158ACB00F87AF8 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		8496E7182C158B5400F87AF8 /* LottoDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoDTO.swift; sourceTree = "<group>"; };
+		8496E71E2C15C0A700F87AF8 /* configuration.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = configuration.xcconfig; sourceTree = "<group>"; };
+		8496E7232C15D33B00F87AF8 /* WeatherDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDTO.swift; sourceTree = "<group>"; };
+		8496E7282C15FE9B00F87AF8 /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
+		8496E72A2C1607DE00F87AF8 /* WeatherBubbleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherBubbleLabel.swift; sourceTree = "<group>"; };
+		8496E72E2C1616FF00F87AF8 /* Array+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+.swift"; sourceTree = "<group>"; };
+		8496E7322C16471400F87AF8 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		8496E7372C16599E00F87AF8 /* Double+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+.swift"; sourceTree = "<group>"; };
+		8496E7392C16657300F87AF8 /* Int+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8496E7362C164C9F00F87AF8 /* Kingfisher in Frameworks */,
 				8415BB7A2C139555000CA8F1 /* Alamofire in Frameworks */,
 				8415BB7D2C139566000CA8F1 /* SnapKit in Frameworks */,
 			);
@@ -81,14 +99,14 @@
 			isa = PBXGroup;
 			children = (
 				8415BB802C144590000CA8F1 /* APIURL.swift */,
+				8415BB822C14697A000CA8F1 /* Network.swift */,
 				8415BB772C1392BA000CA8F1 /* App */,
 				8415BB762C1392A2000CA8F1 /* extension */,
 				8415BB842C14697F000CA8F1 /* Lotto */,
 				8496E71A2C15960F00F87AF8 /* Weather */,
 				8496E71B2C15962000F87AF8 /* BoxOffice */,
+				8496E7222C15C41800F87AF8 /* Resources */,
 				8415BB6E2C138E3D000CA8F1 /* .gitignore */,
-				8415BB632C138E2A000CA8F1 /* Assets.xcassets */,
-				8415BB652C138E2A000CA8F1 /* LaunchScreen.storyboard */,
 				8415BB682C138E2A000CA8F1 /* Info.plist */,
 			);
 			path = LuckyWeatherMovie;
@@ -97,7 +115,6 @@
 		8415BB762C1392A2000CA8F1 /* extension */ = {
 			isa = PBXGroup;
 			children = (
-				8415BB742C139295000CA8F1 /* UILabel+.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -116,8 +133,8 @@
 			children = (
 				8496E7152C158A7A00F87AF8 /* VC */,
 				8415BB7E2C14382B000CA8F1 /* WinningBall.swift */,
-				8415BB822C14697A000CA8F1 /* Network.swift */,
 				8496E7182C158B5400F87AF8 /* LottoDTO.swift */,
+				8415BB742C139295000CA8F1 /* UILabel+.swift */,
 			);
 			path = Lotto;
 			sourceTree = "<group>";
@@ -137,6 +154,13 @@
 			isa = PBXGroup;
 			children = (
 				8415BB702C138EA0000CA8F1 /* WeatherViewController.swift */,
+				8496E72A2C1607DE00F87AF8 /* WeatherBubbleLabel.swift */,
+				8496E7232C15D33B00F87AF8 /* WeatherDTO.swift */,
+				8496E7282C15FE9B00F87AF8 /* UIImage+.swift */,
+				8496E72E2C1616FF00F87AF8 /* Array+.swift */,
+				8496E7372C16599E00F87AF8 /* Double+.swift */,
+				8496E7322C16471400F87AF8 /* UIView+.swift */,
+				8496E7392C16657300F87AF8 /* Int+.swift */,
 			);
 			path = Weather;
 			sourceTree = "<group>";
@@ -147,6 +171,16 @@
 				8415BB722C138EAE000CA8F1 /* BoxOfficeViewController.swift */,
 			);
 			path = BoxOffice;
+			sourceTree = "<group>";
+		};
+		8496E7222C15C41800F87AF8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8415BB652C138E2A000CA8F1 /* LaunchScreen.storyboard */,
+				8415BB632C138E2A000CA8F1 /* Assets.xcassets */,
+				8496E71E2C15C0A700F87AF8 /* configuration.xcconfig */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +202,7 @@
 			packageProductDependencies = (
 				8415BB792C139555000CA8F1 /* Alamofire */,
 				8415BB7C2C139566000CA8F1 /* SnapKit */,
+				8496E7352C164C9F00F87AF8 /* Kingfisher */,
 			);
 			productName = LuckyWeatherMovie;
 			productReference = 8415BB572C138E29000CA8F1 /* LuckyWeatherMovie.app */;
@@ -200,6 +235,7 @@
 			packageReferences = (
 				8415BB782C139555000CA8F1 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				8415BB7B2C139566000CA8F1 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				8496E7342C164C9F00F87AF8 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 8415BB582C138E29000CA8F1 /* Products */;
 			projectDirPath = "";
@@ -216,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8415BB6F2C138E3E000CA8F1 /* .gitignore in Resources */,
+				8496E71F2C15C0A700F87AF8 /* configuration.xcconfig in Resources */,
 				8415BB642C138E2A000CA8F1 /* Assets.xcassets in Resources */,
 				8415BB672C138E2A000CA8F1 /* Base in Resources */,
 			);
@@ -232,6 +269,10 @@
 				8415BB752C139295000CA8F1 /* UILabel+.swift in Sources */,
 				8415BB5F2C138E29000CA8F1 /* LottoViewController.swift in Sources */,
 				8415BB712C138EA0000CA8F1 /* WeatherViewController.swift in Sources */,
+				8496E7242C15D33B00F87AF8 /* WeatherDTO.swift in Sources */,
+				8496E72B2C1607DE00F87AF8 /* WeatherBubbleLabel.swift in Sources */,
+				8496E7332C16471400F87AF8 /* UIView+.swift in Sources */,
+				8496E73A2C16657300F87AF8 /* Int+.swift in Sources */,
 				8496E7172C158ACB00F87AF8 /* TextField.swift in Sources */,
 				8415BB7F2C14382B000CA8F1 /* WinningBall.swift in Sources */,
 				8496E7142C15895A00F87AF8 /* Constraints.swift in Sources */,
@@ -239,8 +280,11 @@
 				8415BB5B2C138E29000CA8F1 /* AppDelegate.swift in Sources */,
 				8415BB832C14697A000CA8F1 /* Network.swift in Sources */,
 				8415BB732C138EAE000CA8F1 /* BoxOfficeViewController.swift in Sources */,
+				8496E7292C15FE9B00F87AF8 /* UIImage+.swift in Sources */,
+				8496E7382C16599E00F87AF8 /* Double+.swift in Sources */,
 				8415BB862C147B30000CA8F1 /* PickerView.swift in Sources */,
 				8415BB5D2C138E29000CA8F1 /* SceneDelegate.swift in Sources */,
+				8496E72F2C1616FF00F87AF8 /* Array+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,6 +423,7 @@
 		};
 		8415BB6C2C138E2A000CA8F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8496E71E2C15C0A700F87AF8 /* configuration.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -411,6 +456,7 @@
 		};
 		8415BB6D2C138E2A000CA8F1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8496E71E2C15C0A700F87AF8 /* configuration.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -481,6 +527,14 @@
 				minimumVersion = 5.7.1;
 			};
 		};
+		8496E7342C164C9F00F87AF8 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.11.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -493,6 +547,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 8415BB7B2C139566000CA8F1 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		8496E7352C164C9F00F87AF8 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8496E7342C164C9F00F87AF8 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
