@@ -5,8 +5,6 @@
 //  Created by dopamint on 6/9/24.
 //
 
-import Foundation
-
 extension LottoViewController {
     
     func configureLayout() {
