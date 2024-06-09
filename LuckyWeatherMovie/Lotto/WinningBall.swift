@@ -10,14 +10,18 @@ import SnapKit
 
 class WinningBall: UILabel {
     
-    var winningNumber: Int = 12 {
+    var winningNumber: Int? = 12 {
         didSet {
+            guard let winningNumber else {
+                return
+            }
             backgroundColor = color
             text = String(winningNumber)
         }
     }
     
     override func layoutSubviews() {
+        font = .boldSystemFont(ofSize: 20)
         textColor = .white
         textAlignment = .center
         layer.cornerRadius = frame.height / 2
@@ -31,7 +35,10 @@ class WinningBall: UILabel {
     }
 
     var color: UIColor {
-        switch self.winningNumber {
+        guard let winningNumber else {
+            return .clear
+        }
+        switch winningNumber {
         case 1...10:
             return #colorLiteral(red: 1, green: 0.7942265868, blue: 0, alpha: 1)
         case 11...20:
