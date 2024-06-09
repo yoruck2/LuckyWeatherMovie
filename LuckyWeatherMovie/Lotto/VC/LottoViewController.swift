@@ -14,13 +14,14 @@ class LottoViewController: UIViewController {
     
     lazy var searchingRound = 1119 + calculatePassedWeek()
     
-    var lottoData: Lotto? {
+    var lottoData: LottoDTO? {
         didSet {
             guard let lottoData,
                     let drwNo = lottoData.drwNo,
                   let drwNoDate = lottoData.drwNoDate
             else {
                 return
+                
             }
             firstBall.winningNumber = lottoData.drwtNo1
             secondBall.winningNumber = lottoData.drwtNo2
@@ -30,7 +31,7 @@ class LottoViewController: UIViewController {
             sixthBall.winningNumber = lottoData.drwtNo6
             bonusBall.winningNumber = lottoData.bnusNo
             winningResultRoundLabel.text = "\(drwNo)회 당첨결과"
-            winningResultRoundLabel.asFontColor(targetString: "\(drwNo)", font: .boldSystemFont(ofSize: 30), color: .red)
+            winningResultRoundLabel.setFontColorRange(targetString: "\(drwNo)", font: .boldSystemFont(ofSize: 30), color: UIColor(named: "keyColor"))
             dateLabel.text = "\(drwNoDate) 추첨"
             searchTextField.text = "\(drwNo)"
             roundPickerView.reloadAllComponents()
@@ -163,7 +164,7 @@ class LottoViewController: UIViewController {
                 semaphore.wait() // 네트워크 요청이 완료될 때까지 대기
             } while tempLotto?.returnValue == "success"
             self.roundPickerView.reloadAllComponents()
-            self.roundPickerView.selectRow(self.searchingRound-3, inComponent: 0, animated: true)
+            self.roundPickerView.selectRow(self.searchingRound - 3, inComponent: 0, animated: true)
         }
     }
     
@@ -190,39 +191,6 @@ class LottoViewController: UIViewController {
         view.addSubview(resultBallStackView)
         view.addSubview(bonusLabel)
         view.addSubview(roundPickerView)
-    }
-}
-
-extension LottoViewController: UITextFieldDelegate {
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        guard let text = textField.text, let round = Int(text) else {
-            return false
-        }
-        guard round >= 0 else {
-            return false
-        }
-        
-        Network.getRequest(round: round) { [weak self] lotto in
-            self?.lottoData = lotto
-        }
-        roundPickerView.selectRow(round - 1, inComponent: 0, animated: true)
-        
-        return true
-    }
-
-    func textFieldDidChangeSelection(_ textField: UITextField) {
-        guard let text = textField.text, let round = Int(text) else {
-            return
-        }
-        guard round >= 0 else {
-            return
-        }
-        
-        Network.getRequest(round: round) { [weak self] lotto in
-            self?.lottoData = lotto
-        }
-        roundPickerView.selectRow(round - 1, inComponent: 0, animated: true)
     }
 }
 
