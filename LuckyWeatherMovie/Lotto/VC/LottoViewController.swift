@@ -22,7 +22,6 @@ class LottoViewController: UIViewController {
                   let firstWinamnt = lottoData.firstWinamnt
             else {
                 return
-                
             }
             firstBall.winningNumber = lottoData.drwtNo1
             secondBall.winningNumber = lottoData.drwtNo2

@@ -19,5 +19,17 @@ struct Network {
                 }
             }
     }
+    
+    static func weatherGetRequest(completion: @escaping (WeatherDTO) -> Void) {
+        AF.request("\(APIURL.weatherURL)")
+            .responseDecodable(of: WeatherDTO.self) { response in
+                switch response.result {
+                case .success(let value):
+                    completion(value)
+                case .failure(let error):
+                    print(error)
+                }
+            }
+    }
 }
 
