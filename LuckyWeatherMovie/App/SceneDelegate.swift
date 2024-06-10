@@ -19,7 +19,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let firstVC = LottoViewController()
         let secondVC = WeatherViewController()
         let thirdVC = BoxOfficeViewController()
-        [firstVC, secondVC, thirdVC].forEach { $0.view.backgroundColor = .white }
         
         let tabBarController = UITabBarController()
         tabBarController.setViewControllers([firstVC, secondVC, thirdVC], animated: true)
