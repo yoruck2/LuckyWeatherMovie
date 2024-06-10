@@ -14,8 +14,8 @@ extension Int {
         let dateFormatter = DateFormatter()
         dateFormatter.timeZone = TimeZone.autoupdatingCurrent
         dateFormatter.dateFormat = "MM월 dd일 HH시 mm분"
-        let strDate = dateFormatter.string(from: date)
+        let result = dateFormatter.string(from: date)
         
-        return strDate
+        return result
     }
 }

@@ -16,7 +16,7 @@ class WeatherViewController: UIViewController {
     var stackViewCount = 0
     
     // TODO: 날씨에 맞는 더 다양한 메세지와 배경 출력하기
-    // TODO: APIURL를 다양한 쿼리에 대응하도록 만들기
+    // TODO: APIURL를 다양한 쿼리에 대응하도록 ㅁ
     var weatherData: WeatherDTO? {
         didSet {
             guard let weatherData else {
@@ -46,10 +46,7 @@ class WeatherViewController: UIViewController {
         view.layer.cornerRadius = 8
         view.clipsToBounds = true
         view.alpha = 0
-        view.snp.makeConstraints {
-            $0.width.equalTo(200)
-            $0.height.equalTo(200)
-        }
+        
         return view
     }()
     
@@ -89,7 +86,7 @@ class WeatherViewController: UIViewController {
     // TODO: - 도시 선택하는 기능
     let locationLabel = {
         let view = UILabel()
-        view.text = "서울"
+        view.text = "대한민국,서울"
         view.textColor = .white
         view.font = .systemFont(ofSize: 25)
         return view
@@ -131,6 +128,7 @@ class WeatherViewController: UIViewController {
         return stackView
     }()
     
+    // MARK: viewDidLoad -
     override func viewDidLoad() {
         super.viewDidLoad()
         configureHierachy()
@@ -172,6 +170,11 @@ class WeatherViewController: UIViewController {
         menuBarStackView.snp.makeConstraints {
             $0.top.equalTo(dateClockLabel.snp.bottom).offset(20)
             $0.horizontalEdges.equalTo(view.safeAreaLayoutGuide).inset(5)
+        }
+        
+        weatherInfoBubble4.snp.makeConstraints {
+                $0.width.equalTo(150)
+                $0.height.equalTo(150)
         }
         
         weatherInfoBubbleStackView.snp.makeConstraints {
