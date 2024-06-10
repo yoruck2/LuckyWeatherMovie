@@ -12,7 +12,7 @@ extension Date {
     var formatedYesterday: String {
         let format = DateFormatter()
         format.dateFormat = "yyyyMMdd"
-        let yesterday = Calendar.current.date(bySetting: .day, value: -1, of: Date())
+        let yesterday = Calendar.current.date(bySetting: .day, value: -1, of: self)
         let result = format.string(from: yesterday ?? Date())
         return result
     }
