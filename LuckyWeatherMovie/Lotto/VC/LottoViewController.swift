@@ -161,7 +161,7 @@ class LottoViewController: UIViewController {
         DispatchQueue.global().async {
             repeat {
                 let semaphore = DispatchSemaphore(value: 0)
-                Network.getRequest(round: self.searchingRound) { lotto in
+                Network.sendRequest(round: self.searchingRound) { lotto in
                     tempLotto = lotto
                     if tempLotto?.returnValue == "success" {
                         DispatchQueue.main.async {
