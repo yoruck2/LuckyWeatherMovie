@@ -10,7 +10,7 @@ import Foundation
 struct APIURL {
     static let lottoURL = "https://www.dhlottery.co.kr/common.do?method=getLottoNumber&drwNo="
     static let weatherURL = "https://api.openweathermap.org/data/2.5/weather?q=seoul&appid=\(APIType.weatherAPI.APIkey)"
-    static let movieURL = "http://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=\(APIType.movieAPI.APIkey)"
+    static let movieURL = "https://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=\(APIType.movieAPI.APIkey)&targetDt="
 }
 
 enum APIType {

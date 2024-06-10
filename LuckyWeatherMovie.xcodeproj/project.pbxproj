@@ -34,6 +34,10 @@
 		8496E7362C164C9F00F87AF8 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 8496E7352C164C9F00F87AF8 /* Kingfisher */; };
 		8496E7382C16599E00F87AF8 /* Double+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496E7372C16599E00F87AF8 /* Double+.swift */; };
 		8496E73A2C16657300F87AF8 /* Int+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496E7392C16657300F87AF8 /* Int+.swift */; };
+		8496E73C2C167B2F00F87AF8 /* BoxOfficeDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496E73B2C167B2F00F87AF8 /* BoxOfficeDTO.swift */; };
+		8496E7432C17545300F87AF8 /* BoxOfficeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496E7422C17545300F87AF8 /* BoxOfficeTableViewCell.swift */; };
+		8496E7452C179F1900F87AF8 /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496E7442C179F1900F87AF8 /* UITextField+.swift */; };
+		8496E7472C17B6A800F87AF8 /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496E7462C17B6A800F87AF8 /* Date+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +67,10 @@
 		8496E7322C16471400F87AF8 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		8496E7372C16599E00F87AF8 /* Double+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+.swift"; sourceTree = "<group>"; };
 		8496E7392C16657300F87AF8 /* Int+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+.swift"; sourceTree = "<group>"; };
+		8496E73B2C167B2F00F87AF8 /* BoxOfficeDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxOfficeDTO.swift; sourceTree = "<group>"; };
+		8496E7422C17545300F87AF8 /* BoxOfficeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxOfficeTableViewCell.swift; sourceTree = "<group>"; };
+		8496E7442C179F1900F87AF8 /* UITextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
+		8496E7462C17B6A800F87AF8 /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +109,6 @@
 				8415BB802C144590000CA8F1 /* APIURL.swift */,
 				8415BB822C14697A000CA8F1 /* Network.swift */,
 				8415BB772C1392BA000CA8F1 /* App */,
-				8415BB762C1392A2000CA8F1 /* extension */,
 				8415BB842C14697F000CA8F1 /* Lotto */,
 				8496E71A2C15960F00F87AF8 /* Weather */,
 				8496E71B2C15962000F87AF8 /* BoxOffice */,
@@ -157,10 +164,11 @@
 				8496E72A2C1607DE00F87AF8 /* WeatherBubbleLabel.swift */,
 				8496E7232C15D33B00F87AF8 /* WeatherDTO.swift */,
 				8496E7282C15FE9B00F87AF8 /* UIImage+.swift */,
-				8496E72E2C1616FF00F87AF8 /* Array+.swift */,
 				8496E7372C16599E00F87AF8 /* Double+.swift */,
 				8496E7322C16471400F87AF8 /* UIView+.swift */,
+				8496E72E2C1616FF00F87AF8 /* Array+.swift */,
 				8496E7392C16657300F87AF8 /* Int+.swift */,
+				8415BB762C1392A2000CA8F1 /* extension */,
 			);
 			path = Weather;
 			sourceTree = "<group>";
@@ -169,6 +177,10 @@
 			isa = PBXGroup;
 			children = (
 				8415BB722C138EAE000CA8F1 /* BoxOfficeViewController.swift */,
+				8496E7422C17545300F87AF8 /* BoxOfficeTableViewCell.swift */,
+				8496E73B2C167B2F00F87AF8 /* BoxOfficeDTO.swift */,
+				8496E7442C179F1900F87AF8 /* UITextField+.swift */,
+				8496E7462C17B6A800F87AF8 /* Date+.swift */,
 			);
 			path = BoxOffice;
 			sourceTree = "<group>";
@@ -275,14 +287,18 @@
 				8496E73A2C16657300F87AF8 /* Int+.swift in Sources */,
 				8496E7172C158ACB00F87AF8 /* TextField.swift in Sources */,
 				8415BB7F2C14382B000CA8F1 /* WinningBall.swift in Sources */,
+				8496E7472C17B6A800F87AF8 /* Date+.swift in Sources */,
 				8496E7142C15895A00F87AF8 /* Constraints.swift in Sources */,
 				8415BB812C144590000CA8F1 /* APIURL.swift in Sources */,
 				8415BB5B2C138E29000CA8F1 /* AppDelegate.swift in Sources */,
+				8496E73C2C167B2F00F87AF8 /* BoxOfficeDTO.swift in Sources */,
 				8415BB832C14697A000CA8F1 /* Network.swift in Sources */,
 				8415BB732C138EAE000CA8F1 /* BoxOfficeViewController.swift in Sources */,
 				8496E7292C15FE9B00F87AF8 /* UIImage+.swift in Sources */,
+				8496E7432C17545300F87AF8 /* BoxOfficeTableViewCell.swift in Sources */,
 				8496E7382C16599E00F87AF8 /* Double+.swift in Sources */,
 				8415BB862C147B30000CA8F1 /* PickerView.swift in Sources */,
+				8496E7452C179F1900F87AF8 /* UITextField+.swift in Sources */,
 				8415BB5D2C138E29000CA8F1 /* SceneDelegate.swift in Sources */,
 				8496E72F2C1616FF00F87AF8 /* Array+.swift in Sources */,
 			);
