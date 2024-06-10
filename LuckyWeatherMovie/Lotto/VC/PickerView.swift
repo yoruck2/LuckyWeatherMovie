@@ -22,7 +22,7 @@ extension LottoViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        Network.getRequest(round: row + 1) { [weak self] lotto in
+        Network.sendRequest(round: row + 1) { [weak self] lotto in
             self?.lottoData = lotto
         }
     }

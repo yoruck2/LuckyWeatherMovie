@@ -17,7 +17,7 @@ extension LottoViewController: UITextFieldDelegate {
             return
         }
         
-        Network.getRequest(round: round) { [weak self] lotto in
+        Network.sendRequest(round: round) { [weak self] lotto in
             self?.lottoData = lotto
         }
         roundPickerView.selectRow(round - 1, inComponent: 0, animated: true)
