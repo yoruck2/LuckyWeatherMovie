@@ -66,6 +66,7 @@ class BoxOfficeViewController: UIViewController {
         super.viewDidLoad()
         configureHierachy()
         configureLayout()
+        setUpTableView()
         
         Network.sendGetRequest(targetDate: Date().formatedYesterday) { data in
             self.boxOfficeDataList = data.boxOfficeResult.dailyBoxOfficeList
@@ -135,6 +136,7 @@ extension BoxOfficeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func setUpTableView() {
         boxOfficeTableView.delegate = self
+        boxOfficeTableView.backgroundColor = .black
         boxOfficeTableView.dataSource = self
         boxOfficeTableView.register(BoxOfficeTableViewCell.self, forCellReuseIdentifier: BoxOfficeTableViewCell.identifier)
     }
